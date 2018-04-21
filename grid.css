@@ -1,0 +1,239 @@
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+}
+body {
+	padding-top: 70px;
+	margin: 10px;
+	font-size: 16px;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	color: black;
+	margin: 0;
+	background: url('images/wood-pattern.png');
+}
+h1,
+h2,
+h3,
+p {
+	margin: 10px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.demo {
+	margin: 3em 0;
+	padding: 7.5em 0 5.5em;
+	background: #26941f;
+}
+.demo:hover .gridster {
+	margin: 0 auto;
+	opacity: 0.800000011920928955078125;
+	transition: opacity 0.6s;
+}
+.content {
+	color: white;
+}
+.gridster .gs-w {
+	background: none;
+	cursor: pointer;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.gridster .player {
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	background: #bbb;
+}
+.gridster .gs-w.try {
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position: 37px -169px;
+}
+.gridster .preview-holder {
+	border: none !important;
+	border-radius: 0 !important;
+	background: red !important;
+}
+.gridster li {
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 100%;
+}
+ul {
+	list-style: none;
+}
+li {
+	list-style: none;
+}
+.gridster-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.controls {
+	margin-bottom: 20px;
+}
+.badge-corner:empty {
+	display: inline-block;
+}
+.badge-corner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 60px solid #888;
+	border-top-color: rgba(0, 0, 0, 0.3);
+	border-left: 40px solid transparent;
+	padding: 0;
+	background-color: transparent;
+	border-radius: 0;
+}
+.badge-corner span {
+	position: absolute;
+	top: -53px;
+	left: -21px;
+	font-size: 16px;
+	color: #fff;
+}
+.badge-corner span:hover {
+	color: red;
+}
+.relative img {
+	margin-top: -5px;
+}
+.pagetitle {
+	position: absolute;
+	width: 100%;
+	font-family: 'Lobster';
+	text-align: center;
+	margin: 0 auto;
+	font-size: 36px;
+	color: white;
+}
+.navbar-toggle {
+	z-index: 3;
+}
+.navbar-right {
+	margin-right: 12px;
+}
+.book {
+	display: inline-block;
+	box-shadow: 5px 5px 20px #333;
+	margin: 10px;
+	position: relative;
+}
+.book img {
+	vertical-align: middle;
+}
+.book:hover {
+	transform: scale(1.05);
+	transition: all 0.3s;
+}
+.csstransforms3d .book {
+	position: relative;
+	outline: 1px solid transparent;
+	box-shadow: none;
+	margin: 0;
+}
+.csstransforms3d .book img {
+	position: relative;
+	max-width: 100%;
+}
+.csstransforms3d .book:before,
+.csstransforms3d .book:after {
+	position: absolute;
+	top: 2%;
+	height: 96%;
+	content: ' ';
+	z-index: -1;
+}
+.csstransforms3d .book:before {
+	width: 100%;
+	left: 7.5%;
+	background-color: #5a2d18;
+	box-shadow: 5px 5px 20px #333;
+}
+.csstransforms3d .book:after {
+	width: 5%;
+	left: 100%;
+	background-color: #efefef;
+	box-shadow: 0 0 5px #aaa inset;
+}
+.bookshelf--frame {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.bookshelf--frame {
+	background: tan;
+	background: url("https://static.tumblr.com/8x9m588/C8ho55ylx/bg-wood2.png"),
+		linear-gradient(
+			#323232,
+			#373737 290px,
+			#a8914e 290px,
+			#a8914e 292px,
+			#9a8548 292px,
+			#9a8548 298px,
+			#8c7942 298px,
+			#8c7942 300px
+		);
+	background-size: auto, 10px 300px;
+	border-left: 10px solid #9a8548;
+	border-right: 10px solid #9a8548;
+	text-align: center;
+}
+.bookshelf--frame:first-of-type {
+	border-top: 10px solid #9a8548;
+}
+.bookshelf--frame .book-wrapper {
+	display: inline-block;
+	width: 290px;
+	vertical-align: bottom;
+	height: 280px;
+	position: relative;
+	margin: 10px 0;
+	max-width: 100%;
+}
+.bookshelf--frame .book-wrapper img {
+	height: auto;
+	width: auto;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	max-height: 100%;
+	max-width: 100%;
+}
+#myModal li {
+	font-style: italic;
+	font-size: 12px;
+}
+#instructions li {
+	font-weight: bold;
+	list-style: circle;
+}
+.modal p {
+	font-size: 15px;
+}
+#instructions ul li {
+	margin-bottom: 20px;
+}
+#instructionsimage {
+	height: 20px;
+}
+#instructionsimage:hover {
+	position: relative;
+	top: -25px;
+	width: 500px;
+	height: auto;
+	display: block;
+	z-index: 999;
+}
+.jumbotron {
+	background-color: white;
+}
