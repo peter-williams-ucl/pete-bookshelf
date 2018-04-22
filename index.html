@@ -20,7 +20,7 @@
 
 
 <!-- Navigation Bar -->
-<body onload="popup(2); loadbooks(2);">  <nav class="navbar navbar-inverse navbar-fixed-top">
+<body onload="loadbooks(2);">  <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="icon-bar"></span>
@@ -28,44 +28,15 @@
       <span class="icon-bar"></span>
     </button>    
   </div>
-  <p class="pagetitle">Sort the Shelves</p>
+  <p class="pagetitle">DLPLD</p>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
       <li><p class="navbar-btn">
                     <a href="#myModal" data-target="#instructions" data-toggle="modal" class="btn btn-primary">Instructions</a>
                 </p></li>
-      <li><p class="navbar-btn">
-                    <a href="task3.html" onclick="storetask(2);" class="btn btn-success">Done</a>
-                </p></li>
     </ul>
   </div>
 </nav>
-
-
-<!-- Task Intro Modal-->
-<div class="modal fade" id="task2intro" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Now what?</h4>
-        </div>
-        <div class="modal-body">
-          <p>This page is the same task as before but with slightly different books!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Got it</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-
-
-  
 
     
 
@@ -80,18 +51,7 @@
           <h4 class="modal-title">Instructions</h4>
         </div>
         <div class="modal-body">
-          <p><b>Goal:</b><br>The aim of this exercise is to determine which books out of the ones displayed would you <b><i>recommend to someone else similar to you</i></b>.</p><hr>
-
-          <ul>
-          <li>Simply click and drag each book into a descending order of preference with the top shelf being the books you prefer the most and the shelves below being books that you wouldn't recommend as much as much as the ones above. If you put books on the same shelf as each other - it means that they are pretty much equal in your mind (in terms of which one you would recommend).Hover over this image for a visual expalanation: <img src="images/instructionsimage.png" id="instructionsimage" alt="instructions screenshot"></li>
-
-          <li>If you haven't read a book or don't know enough about it to recommend it - simply click the 'X' at the top right hand corner of the book to remove it from the bookshelf.</li>
-
-          <li>You can drag a book anywhere on the shelf and the other books around it will adjust and snap into place. It is even possible to have only a single book on every shelf if that is what you prefer. </li>
-
-          <li>Click the 'Done' button at the top right hand corner of the screen when you are ready to move on to the next task!</li>
-
-          </ul>
+          <p> Simply click on a participant's name to view their page in the archive!</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal">Got it</button>
@@ -111,9 +71,9 @@
     <ul id="listoftasks" class="task-card-list">
 
 
-        <li id="9780316015844" title="twilight" data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-         <div class="book"><img src="images/task2/twilight.jpg" alt="twilight" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
+        <li id="9780679805274" title="Cas" data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="Cas" data-sizey="1"><div class="badge-corner">
+              <span>Cas</span>
             </div>
             </div>
             </div>
@@ -121,64 +81,54 @@
 
 
 
-         <li id="9781594631931" title="thekiterunner" data-row="1" data-col="3" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-         <div class="book"><img src="images/task2/thekiterunner.jpg" alt="thekiterunner" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
+          <li id="9780679805274" title="Adam" data-row="5" data-col="2" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="Adam" data-sizey="1"><div class="badge-corner">
+              <span>Adam</span>
             </div>
             </div>
             </div>
             </li>
 
 
-         <li id="9780547928227" title="thehobbit" data-row="1" data-col="5" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-         <div class="book"><img src="images/task2/thehobbit.jpg" alt="thehobbit" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
+          <li id="9780679805274" title="Chloe" data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="ohtheplacesyoullgo" data-sizey="1"><div class="badge-corner">
+              <span>Chloe</span>
             </div>
             </div>
             </div>
             </li>
 
 
-         <li id="9781619490246" title="heartofdarkness" data-row="1" data-col="6" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-         <div class="book"><img src="images/task2/heartofdarkness.jpeg" alt="heartofdarkness" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
+          <li id="9780679805274" title="Jan" data-row="3" data-col="3" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="ohtheplacesyoullgo" data-sizey="1"><div class="badge-corner">
+              <span>Jan</span>
             </div>
             </div>
             </div>
             </li>
 
 
-         <li id="9780439023528" title="thehungergames" data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-         <div class="book">
-         <img src="images/task2/thehungergames.jpg" alt="thehungergames" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
-            </div>
-            </div>
-            </div></li>
-
-
-         <li id="9780451524935" title="1984" data-row="2" data-col="5" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-         <div class="book"><img src="images/task2/1984.jpeg" alt="1984" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
+          <li id="9780679805274" title="Luke" data-row="4" data-col="1" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="ohtheplacesyoullgo" data-sizey="1"><div class="badge-corner">
+              <span>Luke</span>
             </div>
             </div>
             </div>
             </li>
 
 
-         <li id="9780425232200" title="thehelp" data-row="2" data-col="3" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-         <div class="book"><img src="images/task2/thehelp.jpg" alt="thehelp" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
+          <li id="9780679805274" title="Natasha" data-row="3" data-col="4" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="ohtheplacesyoullgo" data-sizey="1"><div class="badge-corner">
+              <span>Natasha</span>
             </div>
             </div>
             </div>
             </li>
 
 
-
-         <li id="9780544336261" title="thegiver" data-row="2" data-col="6" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-         <div class="book"><img src="images/task2/thegiver.jpg" alt="thegiver" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
+         <li id="9780679805274" title="Christina" data-row="2" data-col="3" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="ohtheplacesyoullgo" data-sizey="1"><div class="badge-corner">
+              <span>Christina</span>
             </div>
             </div>
             </div>
@@ -186,40 +136,50 @@
 
 
 
-         <li id="9780679805274" title="ohtheplacesyoullgo" data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-         <div class="book"><img src="images/task2/ohtheplacesyoullgo.jpeg" alt="ohtheplacesyoullgo" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
+         <li id="9780679805274" title="Sabina" data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="ohtheplacesyoullgo" data-sizey="1"><div class="badge-corner">
+              <span>Sabina</span>
             </div>
             </div>
             </div>
             </li>
 
 
-        <li id="9780061124952" title="charlottesweb" data-row="3" data-col="3" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-  <div class="book"><img src="images/task2/charlottesweb.jpeg" alt="charlottesweb" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
-            </div>
-            </div>
-            </div>
-        </li>
 
-
-         <li id="9781455582877" title="thenotebook" data-row="3" data-col="3" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
-         <div class="book"><img src="images/task2/thenotebook.jpg" alt="thenotebook" data-sizex="1" data-sizey="1"><div class="badge-corner">
-              <span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
+         <li id="9780679805274" title="Michael" data-row="1" data-col="4" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="ohtheplacesyoullgo" data-sizey="1"><div class="badge-corner">
+              <span>Michael</span>
             </div>
             </div>
             </div>
             </li>
 
 
-         <li id="9780307588371" title="gonegirl" data-row="3" data-col="6" data-sizex="1" data-sizey="1" ><div class="books">
-         <div class="book"><img src="images/task2/gonegirl.jpg" alt="gonegirl" data-sizex="1" data-sizey="1">
-          <div class="badge-corner"><span class="fa fa-times fa-4x" onclick="delete_book(this)"></span>
+         <li id="9780679805274" title="Bobby" data-row="4" data-col="3" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="Bobby" data-sizey="1"><div class="badge-corner">
+              <span>Bobby</span>
             </div>
             </div>
             </div>
-          </li>
+            </li>
+
+
+          <li id="9780679805274" title="Mike" data-row="3" data-col="3" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="Mike" data-sizey="1"><div class="badge-corner">
+              <span>Mike</span>
+            </div>
+            </div>
+            </div>
+            </li>
+
+
+          <li id="9780679805274" title="Gina" data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="task-card"><div class="books">
+         <div clas-"book"><img src="images/iphone.png" class="phone" alt="ohtheplacesyoullgo" data-sizey="1"><div class="badge-corner">
+              <span>Gina</span>
+            </div>
+            </div>
+            </div>
+            </li>
     </ul>
     </div>
 </div>

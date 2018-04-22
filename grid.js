@@ -67,55 +67,6 @@ $(function() {
         .data('gridster');
 });
 
-//Function to show initial modal popups for each task.
-function popup(task) {
-    switch (task) {
-        case 1:
-            $('#myModal').modal('show');
-            break;
-        case 2:
-            $('#task2intro').appendTo('body').modal('show');
-            break;
-        case 3:
-            $('#task3intro').appendTo('body').modal('show');
-            break;
-        case 4:
-            $('#task4intro').modal('show');
-    }
-}
-
-//Function to store books" HTML for first and second set of tasks.
-function storebooks(task) {
-    switch (task) {
-        case 1:
-            var dictionary = gridster[0].serialize();
-            var fullelement = 'task1book';
-            var bookcolumn = 'task1bookcol';
-            var booklevel = 'task1bookrow';
-            break;
-
-        case 3:
-            var dictionary = gridster[2].serialize();
-            var fullelement = 'task3book';
-            var bookcolumn = 'task3bookcol';
-            var booklevel = 'task3bookrow';
-            break;
-    }
-    for (book in dictionary) {
-        if (dictionary[book].row == 1) {
-            var bookid = dictionary[book].id;
-            var bookcol = dictionary[book].col;
-            var bookrow = dictionary[book].row;
-            break;
-        }
-    }
-
-    div = document.getElementById(bookid).outerHTML;
-    sessionStorage.setItem(fullelement, div);
-    sessionStorage.setItem(bookcolumn, bookcol);
-    sessionStorage.setItem(booklevel, bookrow);
-}
-
 //Function to load books" HTML from session storage in order to populate next task with a book from the previous task.
 function loadbooks(task) {
     var list = document.getElementById('listoftasks');

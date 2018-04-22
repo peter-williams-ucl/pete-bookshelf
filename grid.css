@@ -26,6 +26,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+[data-sizex="1"] {
+	width: auto;
+}
 .demo {
 	margin: 3em 0;
 	padding: 7.5em 0 5.5em;
@@ -46,7 +49,8 @@ table {
 }
 .gridster .player {
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-	background: #bbb;
+	/*	background: #bbb;
+*/
 }
 .gridster .gs-w.try {
 	background-image: url(../img/sprite.png);
@@ -96,8 +100,8 @@ li {
 }
 .badge-corner span {
 	position: absolute;
-	top: -53px;
-	left: -21px;
+	top: -73px;
+	left: -71px;
 	font-size: 16px;
 	color: #fff;
 }
@@ -122,7 +126,7 @@ li {
 .navbar-right {
 	margin-right: 12px;
 }
-.book {
+/*.book {
 	display: inline-block;
 	box-shadow: 5px 5px 20px #333;
 	margin: 10px;
@@ -134,8 +138,8 @@ li {
 .book:hover {
 	transform: scale(1.05);
 	transition: all 0.3s;
-}
-.csstransforms3d .book {
+}*/
+/*.csstransforms3d .book {
 	position: relative;
 	outline: 1px solid transparent;
 	box-shadow: none;
@@ -164,7 +168,7 @@ li {
 	left: 100%;
 	background-color: #efefef;
 	box-shadow: 0 0 5px #aaa inset;
-}
+}*/
 .bookshelf--frame {
 	max-width: 1200px;
 	margin: 0 auto;
